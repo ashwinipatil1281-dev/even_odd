@@ -13,3 +13,4 @@ def even_odd(n):
               even_odd = "Odd"
     return prime_status, even_odd
   
+
