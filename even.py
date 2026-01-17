@@ -17,7 +17,3 @@ def check_number(num):
     return result
 
 
-if __name__ == "__main__":
-    num = int(input("Enter a number: "))
-    print(check_number(num))
-
