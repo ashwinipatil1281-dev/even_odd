@@ -1,16 +1,23 @@
-def even_odd(n):
-    if n <= 1:
-        prime_status = "Not Prime"
+def check_number(num):
+    if num <= 1:
+        prime_result = "Not Prime"
     else:
-        prime_status = "Prime"
-        for i in range(2, n):
-            if n % i == 0:
-                prime_status = "Not Prime"
+        prime_result = "Prime"
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                prime_result = "Not Prime"
                 break
-            if n % 2 == 0:
-              even_odd = "Even"
-            else:
-              even_odd = "Odd"
-    return prime_status, even_odd
-  
+
+    if num % 2 == 0:
+        even_odd_result = "Even"
+    else:
+        even_odd_result = "Odd"
+
+    result = (prime_result, even_odd_result)
+    return result
+
+
+if __name__ == "__main__":
+    num = int(input("Enter a number: "))
+    print(check_number(num))
 
