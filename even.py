@@ -1,6 +1,5 @@
 def check_number(num):
     
-if __name__ == "__main__":
     num = int(input("Enter a number: "))
     print(check_number(num))
 
