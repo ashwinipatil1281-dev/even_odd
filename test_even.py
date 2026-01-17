@@ -1,5 +1,5 @@
-from even import even_odd
+from number_check import check_number
 
-def test_prime_and_even():
-    result = even_odd(7)
-    assert result == ("Prime", "Odd")
+def test_number_case1():
+    expected_output = ("Prime", "Odd")
+    assert check_number(7) == expected_output
